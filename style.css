@@ -1,0 +1,517 @@
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Comforter&family=Festive&family=Montserrat:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&family=Quintessential&family=Roboto:wght@100;500;700&family=Source+Sans+Pro&display=swap");
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0%;
+  padding: 0%;
+  background-color: #ffffffe5;
+  font-family: "Montserrat", sans-serif;
+}
+.logo {
+  width: 200px;
+  height: 70px;
+  background-color: transparent;
+}
+.logo img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  background-color: transparent;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.toggle-button {
+  position: absolute;
+  top: 1.8rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 21px;
+  background-color: #191c1f;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  color: #191c1f;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navLinks ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+.navLinks ul li {
+  list-style: none;
+  margin: 0px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #363738;
+}
+.navLinks button {
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: none;
+  background-color: #91bc4d;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+/* home styles starts here */
+
+.home {
+  max-width: 100%;
+  padding: 2px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.homeTextBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  max-width: 650px;
+  height: 600px;
+}
+.homeTextBox h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #91bc4d;
+  font-family: "Open Sans", sans-serif;
+}
+.homeTextBox h1 {
+  font-size: 96px;
+  font-weight: 700;
+  margin-top: 15px;
+  background-image: linear-gradient(to top, #2e6ca8, #54b9ed);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Open Sans", sans-serif;
+  line-height: 88px;
+}
+.homeTextBox p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #b5b5b6;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
+}
+.homeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.homeBtnA {
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  background-image: linear-gradient(to top, #2e6ca8, #54b9ed);
+  font-family: "Montserrat", sans-serif;
+}
+.homeBtnB {
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #91bc4d;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+.homeImgBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  height: 600px;
+}
+.homeImgBox img {
+  width: 100%;
+  height: inherit;
+  object-fit: contain;
+}
+.offerPage {
+  padding: 10px 50px;
+}
+
+.offerPage h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  background-image: linear-gradient(to top, #2e6ca8, #54b9ed);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offerPage h2 span {
+  background-image: linear-gradient(to top, #2e6ca8, #54b9ed);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  padding-left: 5px;
+  border-left: 6px solid #91bc4d;
+  height: 42px;
+  margin-right: 5px;
+}
+
+.offerPageContainer {
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.offerPageCard {
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 16px #0000001a;
+}
+.offerPageCard img {
+  width: 150px;
+  height: 96;
+  height: inherit;
+  object-fit: contain;
+}
+.offerPageCard h4 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #b5b5b6;
+}
+.offerPageCard p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #b5b5b6;
+}
+
+.ourSolutionPage {
+  padding: 10px 50px;
+  margin-top: 20px;
+}
+
+.ourSolutionPage h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  background-image: linear-gradient(to top, #2e6ca8, #54b9ed);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ourSolutionPage h2 span {
+  background-image: linear-gradient(to top, #2e6ca8, #54b9ed);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  padding-left: 5px;
+  border-left: 6px solid #91bc4d;
+  height: 42px;
+  margin-right: 5px;
+}
+.ourSolutionContainer {
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.ourSolutionCard {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+.ourSolutionCard h4 {
+  font-size: 16px;
+  font-weight: 600;
+  background-image: linear-gradient(to top, #2e6ca8, #54b9ed);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.ourSolutionCard p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #b5b5b6;
+  margin-top: 15px;
+}
+.ourSolutionCardP {
+  border-right: 1px solid #e5e5e5;
+}
+.ourSolutionCard button {
+  padding: 16px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 15px;
+  border: none;
+  background-image: linear-gradient(to top, #2e6ca8, #54b9ed);
+  font-family: "Montserrat", sans-serif;
+}
+
+.missionContainer {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #91bc4d;
+  padding: 50px 50px;
+}
+.missionCard {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.missionCard h4 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  background-color: transparent;
+}
+.missionCard button {
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  background-image: linear-gradient(to top, #2e6ca8, #54b9ed);
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 20px 50px;
+  background-image: linear-gradient(to top, #2e6ca8, #54b9ed);
+  max-width: 100%;
+}
+.footerContainer {
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.footerCard {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  background-color: transparent;
+}
+.footerCard img {
+  width: 149px;
+  height: 53px;
+  object-fit: cover;
+  background-color: transparent;
+}
+.footerCard h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffffff;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+}
+.footerCard p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: transparent;
+}
+.footerCard ul {
+  background-color: transparent;
+}
+.footerCard ul li {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  margin-top: 15px;
+  list-style: none;
+  background-color: transparent;
+}
+.footerCard ul li a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  margin-top: 15px;
+  list-style: none;
+  background-color: transparent;
+}
+.footerRightCard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+.footerRights {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+.footerRights p {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+}
+.footerRightCardIcons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: transparent;
+}
+.footerRightCardIcons img {
+  background-color: transparent;
+}
+
+@media (max-width: 800px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar {
+    background-color: #191c1f;
+  }
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #191c1f;
+    transition: max-height 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 5px;
+    padding-bottom: 10px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navLinks ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .navLinks ul li {
+    text-align: center;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #ffffff;
+  }
+
+  .navLinks.active {
+    display: flex;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .homeImgBox {
+    display: none;
+  }
+  .homeTextBox {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .homeTextBox h1 {
+    font-size: 60px;
+  }
+  .missionCard {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .missionCard button {
+    margin-top: 15px;
+  }
+  .offerPageCard {
+    width: 100%;
+    height: auto;
+  }
+  .footerRightCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .ourSolutionCardP {
+    border: none;
+  }
+  .footerRightCardIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
